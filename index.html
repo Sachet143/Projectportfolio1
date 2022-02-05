@@ -59,33 +59,48 @@
                 </ul>
 
                 <div class="project-detail">
-                    <div class="project-description">
+                    <div class="project-description" onmouseover="hoverOn(0)" onmouseleave="hoverOf(0)">
                         <div class="project-image">
-                                <img class="image" src="iphone.png" alt="iphone">
+                                <img id="image1" class="image" src="iphone.png" alt="iphone">
                         </div>
-                        <p>Madi News</p>
+                        <h2>UI\UX design for Shopper’s Android app</h2>
+                        <p>February, 2022</p>
                     </div>
-                    <div class="project-description">
+                    <div class="project-description" onmouseover="hoverOn(1)" onmouseleave="hoverOf(1)">
                         <div class="project-image">
-                                <img class="image" src="iphone.png" alt="iphone">
+                                <img id="image2" class="image" src="iphone.png" alt="iphone">
                         </div>
-                        <p>Madi News</p>
+                        <h2>UI\UX design for Shopper’s Android app</h2>
+                        <p>February, 2022</p>
                     </div>
-                    <div class="project-description">
+                    <div class="project-description" onmouseover="hoverOn(2)" onmouseleave="hoverOf(2)">
                         <div class="project-image">
-                                <img class="image" src="iphone.png" alt="iphone">
+                                <img id="image3" class="image" src="iphone.png" alt="iphone">
                         </div>
-                        <p>Madi News</p>
+                        <h2>UI\UX design for Shopper’s Android app</h2>
+                        <p>February, 2022</p>
                     </div>
-                    <div class="project-description">
+                    <div class="project-description" onmouseover="hoverOn(3)" onmouseleave="hoverOf(3)">
                         <div class="project-image">
-                                <img class="image" src="iphone.png" alt="iphone">
+                                <img id="image4" class="image" src="iphone.png" alt="iphone">
                         </div>
-                        <p>Madi News</p>
+                        <h2>UI\UX design for Shopper’s Android app</h2>
+                        <p>February, 2022</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
+<script>
+    const x = ["image1", "image2", "image3", "image4"];
+        function hoverOn(i) {
+            document.getElementById(x[i]).style.transform = "scale(1.1,1.1)";
+        }
+
+        function hoverOf(i) {
+            document.getElementById(x[i]).style.transform = "scale(1,1)";
+        }
+</script>
 </html>
