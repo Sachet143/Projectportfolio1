@@ -4,13 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+    height: auto;
+}
+
 .header {
     width: 100%;
     background: linear-gradient(-45deg, #3875d6, #2f5ca3, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 25s ease-in-out infinite;
     padding: 7vh 12vw;
-	height: 100vh;
+	height: auto;
 }
 
 @keyframes gradient {
@@ -129,7 +134,7 @@
 
 .project {
     width: 100%;
-    height: 100vh;
+    height: auto;
     padding: 7vh 12vw;
 }
 
@@ -216,4 +221,71 @@
     padding: 0 0 10px 0;
     font-family: "Roboto", sans-serif;
     cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 0.5px;
+    background-color: black;
+}
+
+.footer {
+    width: 100;
+    height: auto;
+    padding: 7vh 12vw;
+}
+
+.foot-sec{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+.footer h3 {
+    font-size: 30px;
+    line-height: 1.4;
+    color: #252525;
+    padding: 10px 0px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+.col1 {
+    width: 49%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.contact-desc {
+    color: #252525;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: "Roboto", sans-serif;
+}
+
+title {
+    width: 40%;
+    text-transform: uppercase;
+}
+
+.col2 {
+    width: 49%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.name-email {
+    width: 100%;
+    height: auto;
+}
+
+.text-box {
+    width: 45%;
+    display: inline-block;
+}
+
+.contact {
+    color: #252525;
+    line-height: 2;
+    padding: 10px 0 0 0;
 }
