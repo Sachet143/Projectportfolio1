@@ -9,18 +9,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
 
 </head>
 <body>
     <div>
         <!-- Header Section -->
+        <div id="navbar1" class="navbar1">
+            <span><img src="sachet.jpg" alt="sachet" class="header-img"></span>
+            <span class="logo1">Sachet.</span>
+            <div class="menubar1">
+               <ul class="menu">
+                   <li class="menu-list1"><a>My Projects</a></li>
+                   <li id="aboutmenu" class="menu-list1"><a>About Me</a></li>
+                   <li class="menu-list1"><a>Download CV</a></li>
+                   <li class="menu-list1"><a>Contact Me</a></li>
+                   <li class="menu-list1"><a><u>ENG</u></a></li>
+                   <li class="menu-list1"><a>नेपा</a></li>
+               </ul> 
+            </div>
+        </div>
         <div class="header">
-            <div class="navbar">
+            <div id="navbar" class="navbar">
                 <div class="logo">Sachet.</div>
                 <div class="menubar">
                    <ul class="menu">
                        <li class="menu-list"><a>My Projects</a></li>
-                       <li class="menu-list"><a>About Me</a></li>
+                       <li id="aboutmenu1" class="menu-list"><a>About Me</a></li>
                        <li class="menu-list"><a>Download CV</a></li>
                        <li class="menu-list"><a>Contact Me</a></li>
                        <li class="menu-list"><a><u>ENG</u></a></li>
@@ -28,6 +43,7 @@
                    </ul> 
                 </div>
             </div>
+            
             <div class="intro">
                 <div class="thumbnail">
                     <img src="sachet.jpg" alt="sachet">
@@ -95,48 +111,98 @@
     <!-- line -->
     <div class="line"> </div>
 
-    <footer class="footer">
-        <div class="foot-sec">
+    <div class="footer">
         <h3>Contact</h3>
-            <div class="col1">
+        <div class="foot-sec">
+            <div class="col-1">
                 <p class="contact-desc">Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it. I will not spam you on
                     e-mail or add to MailChimp list.</p>
                 <div class="contact">
                     <p>    
-                        <span class="title">PHONE</span>
-                        <span>+977-98171-64166</span>
+                        <span class="title">phone</span>
+                        <span class="contact-data">+977-98171-64166</span>
                     </p>
                     <p>    
-                        <span class="title">EMAIL</span>
-                        <span>revenger.stha@gmail.com</span>
-                    </p><p>    
-                        <span class="title">ADDRESS</span>
-                        <span>Chhorepatan, Pokhara, Nepal</span>
+                        <span class="title">email</span>
+                        <span class="contact-data">revenger.stha@gmail.com</span>
                     </p>
                     <p>    
-                        <span class="title">SOCIAL</span>
-                        <span>SOME ICONS</span>
+                        <span class="title">address</span>
+                        <span class="contact-data">Chhorepatan, Pokhara, Nepal</span>
+                    </p>
+                    <p>    
+                        <span class="title">social</span>
+                        <span class="contact-data">
+                            <a href=""><i class="fab fa-facebook-f icon"></i></a>
+                            <a href=""><i class="fab fa-twitter icon"></i></a>
+                            <a href=""><i class="fab fa-instagram icon"></i></a>
+                            <a href=""><i class="fab fa-google icon"></i></a>
+                            <a href=""><i class="fab fa-facebook icon"></i></a>
+                        </span>
                     </p>
                 </div>
             </div>
-            <div class="col2">
+            <div class="col-1">
                 <div class="name-email">
                     <div class="text-box name-form">
-                        <label for="name" class="form-name">name</label><br>
-                        <input type="text">
+                        <label for="name" class="form-title form-name">name</label><br>
+                        <input type="text" class="text" placeholder="Your name">
                     </div>
                     <div class="text-box email-form">
-                        <label for="e-mail" class="form-email">email</label><br>
-                        <input type="text">
+                        <label for="e-mail" class="form-title form-email">email</label><br>
+                        <input type="text" class="text" placeholder="Contact E-Mail">
                     </div>
                 </div>
-                <div class="">
-                    <label for="message" class="form-message">message</label><br>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <div class="message">
+                    <label for="message" class="form-message form-title">message</label><br>
+                    <textarea name="message" id="message" class="textarea" placeholder="Project Description"></textarea>
+                </div>
+                <div>
+                    <button class="submit">Send Message</button>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Footer end section -->
+    <footer class="footer-end">
+        Copyright 2022 Sachet.
     </footer>
+
+    <div id="aboutme" class="about-me">
+        <div class="about-sec"
+        <h3>Contact</h3>
+        <div class="foot-sec">
+            <div>
+                <p class="contact-desc">Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it. I will not spam you on
+                    e-mail or add to MailChimp list.</p>
+                <div class="contact">
+                    <p>    
+                        <span class="title">phone</span>
+                        <span class="contact-data">+977-98171-64166</span>
+                    </p>
+                    <p>    
+                        <span class="title">email</span>
+                        <span class="contact-data">revenger.stha@gmail.com</span>
+                    </p>
+                    <p>    
+                        <span class="title">address</span>
+                        <span class="contact-data">Chhorepatan, Pokhara, Nepal</span>
+                    </p>
+                    <p>    
+                        <span class="title">social</span>
+                        <span class="contact-data">
+                            <a href=""><i class="fab fa-facebook-f icon"></i></a>
+                            <a href=""><i class="fab fa-twitter icon"></i></a>
+                            <a href=""><i class="fab fa-instagram icon"></i></a>
+                            <a href=""><i class="fab fa-google icon"></i></a>
+                            <a href=""><i class="fab fa-facebook icon"></i></a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>    
+    </div>
 </body>
 
 <script>
@@ -147,6 +213,36 @@
 
         function hoverOf(i) {
             document.getElementById(x[i]).style.transform = "scale(1,1)";
+        }
+
+        window.onscroll = function() {myHeader()};
+        function myHeader() {
+            if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+            document.getElementById("navbar1").className = "navbar1 slideUp";
+            document.getElementById("navbar").className = "navbar slideDown";
+            }
+            else {
+            document.getElementById("navbar1").className = "navbar1";
+            document.getElementById("navbar").className = "navbar";
+            }   
+        }
+
+        var btn = document.getElementById("aboutmenu");
+        var btn1 = document.getElementById("aboutmenu1");
+        var about = document.getElementById("aboutme");
+
+        btn.onclick = function() {
+            about.style.display = "block";
+        }
+
+        btn1.onclick = function() {
+            about.style.display = "block";
+        }
+
+        window.onclick = function(event) {
+            if(event.target == about) {
+                about.style.display = "none";
+            }
         }
 </script>
 </html>
