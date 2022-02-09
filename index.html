@@ -21,9 +21,9 @@
             <div class="menubar1">
                <ul class="menu">
                    <li class="menu-list1"><a>My Projects</a></li>
-                   <li id="aboutmenu" class="menu-list1"><a>About Me</a></li>
+                   <li onclick="aboutMe()" id="aboutmenu" class="menu-list1"><a>About Me</a></li>
                    <li class="menu-list1"><a>Download CV</a></li>
-                   <li class="menu-list1"><a>Contact Me</a></li>
+                   <li id="contactmenu" class="menu-list1"><a>Contact Me</a></li>
                    <li class="menu-list1"><a><u>ENG</u></a></li>
                    <li class="menu-list1"><a>नेपा</a></li>
                </ul> 
@@ -37,7 +37,7 @@
                        <li class="menu-list"><a>My Projects</a></li>
                        <li id="aboutmenu1" class="menu-list"><a>About Me</a></li>
                        <li class="menu-list"><a>Download CV</a></li>
-                       <li class="menu-list"><a>Contact Me</a></li>
+                       <li id="contactmenu1" class="menu-list"><a>Contact Me</a></li>
                        <li class="menu-list"><a><u>ENG</u></a></li>
                        <li class="menu-list"><a>नेपा</a></li>
                    </ul> 
@@ -169,6 +169,7 @@
         Copyright 2022 Sachet.
     </footer>
 
+    <!-- About me -->
     <div id="aboutme" class="about-me">
         <div class="about-sec"
         <h3>Contact</h3>
@@ -203,6 +204,28 @@
             </div>
         </div>    
     </div>
+
+    <div id="contactme" class="contact-me">
+        <div class="contact-sec">    
+            <div class="name-email">
+                <div class="text-box name-form">
+                    <label for="name" class="form-title form-name">name</label><br>
+                    <input type="text" class="text" placeholder="Your name">
+                </div>
+                <div class="text-box email-form">
+                    <label for="e-mail" class="form-title form-email">email</label><br>
+                    <input type="text" class="text" placeholder="Contact E-Mail">
+                </div>
+            </div>
+            <div class="message">
+                <label for="message" class="form-message form-title">message</label><br>
+                <textarea name="message" id="message" class="textarea" placeholder="Project Description"></textarea>
+            </div>
+            <div>
+                <button class="submit">Send Message</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script>
@@ -230,7 +253,7 @@
         var btn = document.getElementById("aboutmenu");
         var btn1 = document.getElementById("aboutmenu1");
         var about = document.getElementById("aboutme");
-
+        
         btn.onclick = function() {
             about.style.display = "block";
         }
@@ -244,5 +267,27 @@
                 about.style.display = "none";
             }
         }
+
+        function aboutMe() {
+            document.getElementById("aboutme").className += "about-me1";
+        }
+
+
+        // var btn2 = document.getElementById("contactmenu");
+        // var btn3 = document.getElementById("contactmenu1");
+        // var contact = document.getElementById("contactme");
+
+        // btn2.onclick = contactModal();
+        // btn3.onclick = contactModal();
+        // function contactModal() {
+        //     contact.style.display = "block";
+        // }
+
+        // window.onclick = contactModal(event);
+        // function contactModal(event) {
+        //     if(event.target == contact) {
+        //         contact.style.display = "none";
+        //     }
+        // }
 </script>
 </html>
