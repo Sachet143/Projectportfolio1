@@ -197,7 +197,7 @@
                             <a href=""><i class="fab fa-twitter icon"></i></a>
                             <a href=""><i class="fab fa-instagram icon"></i></a>
                             <a href=""><i class="fab fa-google icon"></i></a>
-                            <a href=""><i class="fab fa-facebook icon"></i></a>
+                            <a href=""><i class="fab fa-facebook-messenger icon"></i></a>
                         </span>
                     </p>
                 </div>
@@ -268,26 +268,21 @@
             }
         }
 
-        function aboutMe() {
-            document.getElementById("aboutme").className += "about-me1";
+        var btn2 = document.getElementById("contactmenu");
+        var btn3 = document.getElementById("contactmenu1");
+        var contact = document.getElementById("contactme");
+
+        btn2.onclick = contactModal();
+        btn3.onclick = contactModal();
+        function contactModal() {
+            contact.style.display = "block";
         }
 
-
-        // var btn2 = document.getElementById("contactmenu");
-        // var btn3 = document.getElementById("contactmenu1");
-        // var contact = document.getElementById("contactme");
-
-        // btn2.onclick = contactModal();
-        // btn3.onclick = contactModal();
-        // function contactModal() {
-        //     contact.style.display = "block";
-        // }
-
-        // window.onclick = contactModal(event);
-        // function contactModal(event) {
-        //     if(event.target == contact) {
-        //         contact.style.display = "none";
-        //     }
-        // }
+        window.onclick = contactModal(event);
+        function contactModal(event) {
+            if(event.target == contact) {
+                contact.style.display = "none";
+            }
+        }
 </script>
 </html>
